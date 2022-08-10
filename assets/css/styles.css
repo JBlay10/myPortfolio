@@ -1,0 +1,84 @@
+/* Green for text and blue for background */
+:root{
+    --blue: #4831D4;
+    --green: #CCF381;
+    --font: OCR A Std, monospace;
+}
+
+*{
+    background-color: var(--blue);
+    color: var(--green);
+    font-family: var(--font);
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--blue);
+}
+
+/* Header */
+.top {
+    padding: 20px;
+    font-family: var(--font);
+    background-color: var(--blue);
+    color:  var(--green);
+}
+
+.top h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+.top div {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: var(--font);
+    font-size: 20px;
+}
+
+.top div ul {
+    list-style-type: none;
+}
+
+.top div ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+a {
+    color: var(--green);
+    text-decoration: none;
+}
+
+p{
+    font-size: 16px;
+}
+
+/* Below the header IMG */
+.middleIMG {
+    height: 400px;
+    width: 100%;
+    margin-bottom: 10px;
+    background-image: url("../images/codeIMG2.webp");
+    background-size: cover;
+    background-position: center;
+}
+
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+
+.content {
+    width: 75%; /* add 25% more if needed */
+    display: inline-block;
+    margin-left: 20px;
+}

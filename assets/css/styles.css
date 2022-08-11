@@ -2,7 +2,8 @@
 :root{
     --blue: #4831D4;
     --green: #CCF381;
-    --font: OCR A Std, monospace;
+    --font: 'OCR A Std', monospace;
+    --purple: #cf00ff;
 }
 
 *{
@@ -15,7 +16,7 @@
 }
 
 body {
-    background-color: var(--blue);
+    font-family: var(--font); 
 }
 
 /* Header */
@@ -39,11 +40,11 @@ body {
     font-size: 20px;
 }
 
-.top div ul {
+.top div nav ul {
     list-style-type: none;
 }
 
-.top div ul li {
+.top div nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
@@ -57,16 +58,22 @@ p{
     font-size: 16px;
 }
 
-/* Below the header IMG */
-.middleIMG {
+/* Below the header */
+.aboutMe {
     height: 400px;
     width: 100%;
     margin-bottom: 10px;
-    background-image: url("../images/codeIMG2.webp");
-    background-size: cover;
-    background-position: center;
+   /* background-image: url("../images/codeIMG2.webp"); */
+   /* background-size: cover;
+    background-position: center; */
+    
 }
 
+.aboutMe h2 {
+
+}
+
+/* Floats are for the positioning of the images of content boxes */
 .float-left {
     float: left;
     margin-right: 25px;
@@ -82,3 +89,103 @@ p{
     display: inline-block;
     margin-left: 20px;
 }
+
+/* Resume */
+.myResume {
+    margin-bottom: 20px;
+    text-align: right;
+    padding: 50px;
+    height: 300px;
+    font-family: var(--font);
+    border-style: dotted;
+    border-width: 3px;
+    border-color: var(--green);
+    background-color: black;
+    color: var(--green);
+}
+
+.myResume h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+    text-align: right;
+}
+
+.myResume img {
+    max-height: 200px;
+}
+
+/* My Work */
+.myWork {
+    margin-bottom: 20px;
+    text-align: left;
+    padding: 50px;
+    height: 300px;
+    font-family: var(--font);
+    background-color: black;
+    color: var(--green);
+}
+
+.myWork h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.myWork img{
+    max-height: 200px;
+}
+
+/* Github */
+.gitHub {
+    margin-bottom: 20px;
+    text-align: right;
+    padding: 50px;
+    height: 300px;
+    font-family: var(--font);
+    background-color: black;
+    color: var(--green);
+    border-style: dotted;
+    border-width: 3px;
+    border-color: var(--purple);
+}
+
+.gitHub h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.gitHub img {
+    max-height: 200px;
+}
+
+/* Ways to Contact me */
+.contact {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: var(--font);
+    background-color: black;
+    color: var(--green);;
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.contact img {
+    max-height: 200px;
+}
+
+/* Footer */
+.footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+footer h2 {
+    font-size: 20px;
+}
+
+

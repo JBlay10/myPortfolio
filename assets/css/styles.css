@@ -7,7 +7,6 @@
 }
 
 *{
-    color: var(--green);
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -15,14 +14,19 @@
 
 body {
     font-family: var(--font); 
-    background-color: #AEADA3;
+   /* background-color: #AEADA3; */
+   background-color: var(--blue);
+}
+img {
+    border: 4px double var(--green);
+    padding: 2px;
 }
 
 /* Header */
 .top {
     padding: 20px;
     font-family: var(--font);
-    background-color: var(--blue);
+    background-color: black;
     color:  var(--green);
 }
 
@@ -47,6 +51,13 @@ body {
     display: inline-block;
     margin-left: 25px;
     cursor: pointer;
+    border-bottom: 4px solid var(--green);
+}
+
+.top div nav ul li:hover {
+    border-bottom: 4px double var(--blue);
+    cursor: pointer;
+    border-left: 4px double var(--blue);
 }
 
 a {
@@ -68,7 +79,7 @@ input {
     transition: ease-out .4s;
     color: var(--green);
     font-weight: bolder;
-    margin-top: 35px;
+    margin-top: 17px;
     padding: 13px 30px;
 }
 
@@ -80,15 +91,7 @@ input:hover {
 }
 
 /* Below the header 
-.backGroundIMG {
-    margin-top: 10px;
-    height: 300px;
-    width: 100%;
-    margin-bottom: 10px;
-    background-image: url("../images/pty.png");
-    background-size: cover;
-    background-position: center; 
-}
+
 
 /* Floats are for the positioning of the images of content boxes */
 .float-left {
@@ -140,6 +143,7 @@ input:hover {
     height: 300px;
     font-family: var(--font);
     background-color: var(--blue);
+    background-color: black;
     color: var(--green);
     border-style: dotted;
     border-width: 3px;
@@ -162,7 +166,7 @@ input:hover {
     padding: 50px;
     height: 300px;
     font-family: var(--font);
-  /*  background-color: black; */
+    background-color: black;
     color: var(--green);
     border-style: dotted;
     border-width: 3px;
@@ -184,7 +188,7 @@ input:hover {
     padding: 50px;
     height: 300px;
     font-family: var(--font);
-    background-color: transparent;
+    background-color: black;
     color: var(--green);
     border-style: dotted;
     border-width: 3px;
@@ -206,11 +210,18 @@ input:hover {
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
-    background-color: var(--blue);
+    background-color: black;
+    color: var(--green);
 }
 
 footer h2 {
     font-size: 20px;
+}
+
+.underLine {
+    text-decoration-line: underline;
+    text-decoration-style: double;
+    text-decoration-color: var(--blue);
 }
 
 @media screen and(max-width: 1800px) {

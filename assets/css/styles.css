@@ -70,8 +70,8 @@ p{
 }
 
 input {
-    width: 150px;
-    height: 50px;
+    max-width: 150px;
+    max-height: 50px;
     border: 2px solid transparent;
     background-color: transparent;
     border-radius: 4px;
@@ -116,7 +116,7 @@ input:hover {
     margin-bottom: 20px;
     text-align: right;
     padding: 50px;
-    height: 300px;
+    max-height: 300px;
     font-family: var(--font);
     border-style: dotted;
     border-width: 3px;
@@ -132,7 +132,7 @@ input:hover {
 }
 
 .aboutMe img {
-    max-height: 200px;
+    min-height: 200px;
 }
 
 /* My Work */
@@ -140,7 +140,7 @@ input:hover {
     margin-bottom: 20px;
     text-align: left;
     padding: 50px;
-    height: 300px;
+    min-height: 300px;
     font-family: var(--font);
     background-color: var(--blue);
     background-color: black;
@@ -156,7 +156,7 @@ input:hover {
 }
 
 .myWork img{
-    max-height: 200px;
+    min-height: 200px;
 }
 
 /* Github */
@@ -164,7 +164,7 @@ input:hover {
     margin-bottom: 20px;
     text-align: right;
     padding: 50px;
-    height: 300px;
+    min-height: 300px;
     font-family: var(--font);
     background-color: black;
     color: var(--green);
@@ -179,14 +179,14 @@ input:hover {
 }
 
 .gitHub img {
-    max-height: 200px;
+    min-height: 200px;
 }
 
 /* Ways to Contact me */
 .contact {
     margin-bottom: 20px;
     padding: 50px;
-    height: 300px;
+    min-height: 300px;
     font-family: var(--font);
     background-color: black;
     color: var(--green);
@@ -201,7 +201,7 @@ input:hover {
 }
 
 .contact img {
-    max-height: 200px;
+    min-height: 200px;
 }
 
 /* Footer */
@@ -224,10 +224,15 @@ footer h2 {
     text-decoration-color: var(--blue);
 }
 
-@media screen and(max-width: 1800px) {
+@media screen and (min-width: 400px) and (max-width: 782px) {
     body {
-        width: 100%;
         font-size: 20px;
     }
+
+    .gitHub img {
+        min-height: 80px;
+    }
+
     
 }
+

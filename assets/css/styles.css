@@ -132,7 +132,7 @@ input:hover {
 }
 
 .aboutMe img {
-    min-height: 200px;
+    max-height: 200px;
 }
 
 /* My Work */
@@ -140,7 +140,7 @@ input:hover {
     margin-bottom: 20px;
     text-align: left;
     padding: 50px;
-    min-height: 300px;
+    max-height: 300px;
     font-family: var(--font);
     background-color: var(--blue);
     background-color: black;
@@ -156,7 +156,7 @@ input:hover {
 }
 
 .myWork img{
-    min-height: 200px;
+    max-height: 200px;
 }
 
 /* Github */
@@ -164,7 +164,7 @@ input:hover {
     margin-bottom: 20px;
     text-align: right;
     padding: 50px;
-    min-height: 300px;
+    max-height: 300px;
     font-family: var(--font);
     background-color: black;
     color: var(--green);
@@ -179,14 +179,14 @@ input:hover {
 }
 
 .gitHub img {
-    min-height: 200px;
+    max-height: 200px;
 }
 
 /* Ways to Contact me */
 .contact {
     margin-bottom: 20px;
     padding: 50px;
-    min-height: 300px;
+    max-height: 300px;
     font-family: var(--font);
     background-color: black;
     color: var(--green);
@@ -201,7 +201,7 @@ input:hover {
 }
 
 .contact img {
-    min-height: 200px;
+    max-height: 200px;
 }
 
 /* Footer */
@@ -228,11 +228,6 @@ footer h2 {
     body {
         font-size: 20px;
     }
-
-    .gitHub img {
-        min-height: 80px;
-    }
-
     
 }
 

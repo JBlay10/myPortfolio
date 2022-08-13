@@ -105,8 +105,8 @@ input:hover {
 }
 
 .content {
-    width: 95%; /* add 25% more if needed */
-    display: inline-block;
+    max-width: 95%; /* add 25% more if needed */
+    display: inline-flexbox;
     margin-left: 20px;
 }
 
@@ -228,6 +228,16 @@ footer h2 {
     body {
         font-size: 20px;
     }
-    
+
+    .content {
+        min-width: 25%; /* add 25% more if needed */
+        display: inline-flexbox;
+        margin-left: 20px;
+    }
+
+   /* .contact img {
+        max-height: 100px;
+    }
+    */
 }
 

@@ -226,7 +226,13 @@ footer h2 {
 
 @media screen and (min-width: 400px) and (max-width: 782px) {
     body {
-        font-size: 20px;
+        /*
+        
+        */
+    }
+
+    p{
+        font-size: 13px;
     }
 
     .content {
@@ -235,9 +241,99 @@ footer h2 {
         margin-left: 20px;
     }
 
-   /* .contact img {
+    /* About me */
+    .aboutMe {
+        margin-bottom: 20px;
+        text-align: right;
+        padding: 25px;
+        min-height: 150px;
+        font-family: var(--font);
+        background-color: black;
+        color: var(--green);
+        border-style: dotted;
+        border-width: 3px;
+        border-color: var(--green);
+    }
+
+    .aboutMe h2 {
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+
+    .aboutMe img {
         max-height: 100px;
     }
-    */
+
+    /* My Work */
+    .myWork {
+        margin-bottom: 20px;
+        text-align: justify;
+        padding: 25px;
+        min-height: 150px;
+        font-family: var(--font);
+        background-color: black;
+        color: var(--green);
+        border-style: dotted;
+        border-width: 3px;
+        border-color: var(--green);
+    }
+    
+    .myWork h2 {
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+    
+
+    .myWork img {
+        max-height: 100px;
+    }
+
+    /* Github */
+    .gitHub {
+        margin-bottom: 20px;
+        text-align: right;
+        padding: 25px;
+        min-height: 150px;
+        font-family: var(--font);
+        background-color: black;
+        color: var(--green);
+        border-style: dotted;
+        border-width: 3px;
+        border-color: var(--green);
+    }
+
+    .gitHub h2 {
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+
+    .gitHub img {
+        max-height: 100px;
+    }
+
+    /* Ways to Contact me */
+    .contact {
+        margin-bottom: 20px;
+        padding: 25px;
+        min-height: 150px;
+        font-family: var(--font);
+        background-color: black;
+        color: var(--green);
+        border-style: dotted;
+        border-width: 3px;
+        border-color: var(--green);
+    }
+    
+    .contact h2 {
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+    
+
+    .contact img {
+        max-height: 100px;
+    }
+    
+
 }
 

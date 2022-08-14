@@ -17,6 +17,7 @@ body {
    /* background-color: #AEADA3; */
    background-color: var(--blue);
 }
+
 img {
     border: 4px double var(--green);
     padding: 2px;
@@ -31,7 +32,7 @@ img {
 }
 
 .top h1 {
-    display: inline-block;
+    display: inline-flex;
     font-size: 48px;
 }
 
@@ -48,7 +49,7 @@ img {
 }
 
 .top div nav ul li {
-    display: inline-block;
+    display: inline-flex;
     margin-left: 25px;
     cursor: pointer;
     border-bottom: 4px solid var(--green);
@@ -90,7 +91,20 @@ input:hover {
     cursor: pointer;
 }
 
-/* Below the header 
+/* Below the header */
+.responsive {
+    padding: 0px 20px;
+    display: inline-table;
+    margin-top: 20px;
+}
+
+.responsive img {
+    margin-top: 20px;
+    padding: 5px;
+    max-width: 33.33%;
+    max-height: auto;
+  /*  display: inline-table; */
+}
 
 
 /* Floats are for the positioning of the images of content boxes */
@@ -234,6 +248,74 @@ footer h2 {
     p{
         font-size: 13px;
     }
+/*-------------- Buttons ------------*/
+
+/*--------- Floats ------------------*/
+    .float-left {
+        float: left;
+        margin-right: 25px;
+    }
+
+    .float-right {
+        float: right;
+        margin-left: 25px;
+    }
+
+/*----------- Home Display IMGs --------------*/
+    .responsive {
+        padding: 0px 20px;
+        display: inline-table;
+        margin-top: 20px;
+    }
+
+    .responsive img {
+        max-width: 33.33%;
+       /* max-height: auto;
+        text-align: center; 
+        max-width: 50%;*/
+        max-height: auto;
+    }
+
+/*----------- Header --------------*/
+    .top {
+    padding: 20px;
+    font-family: var(--font);
+    background-color: black;
+    color:  var(--green);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .top h1 {
+        font-size: 25px;
+    }
+
+    .top div {
+        padding-top: 15px;
+        margin-right: 20px;
+        margin-top: 10px;
+        float: right;
+        font-family: var(--font);
+        font-size: 10px;
+    }
+
+    .top div nav ul {
+        list-style-type: none;
+    }
+
+    .top div nav ul li {
+        margin-left: 25px;
+        cursor: pointer;
+        border-bottom: 4px solid var(--green);
+    }
+
+    .top div nav ul li:hover {
+        border-bottom: 4px double var(--blue);
+        cursor: pointer;
+        border-left: 4px double var(--blue);
+    }
+
 
     .content {
         min-width: 25%; /* add 25% more if needed */
@@ -241,7 +323,7 @@ footer h2 {
         margin-left: 20px;
     }
 
-    /* About me */
+    /*-------- About me ------------*/
     .aboutMe {
         margin-bottom: 20px;
         text-align: right;
@@ -261,10 +343,10 @@ footer h2 {
     }
 
     .aboutMe img {
-        max-height: 100px;
+        max-height: 130px;
     }
 
-    /* My Work */
+    /*-------------- My Work -----------------*/
     .myWork {
         margin-bottom: 20px;
         text-align: justify;
@@ -288,7 +370,7 @@ footer h2 {
         max-height: 100px;
     }
 
-    /* Github */
+    /*------------ Github ------------------*/
     .gitHub {
         margin-bottom: 20px;
         text-align: right;
@@ -311,7 +393,7 @@ footer h2 {
         max-height: 100px;
     }
 
-    /* Ways to Contact me */
+    /*------------- Ways to Contact me --------*/
     .contact {
         margin-bottom: 20px;
         padding: 25px;

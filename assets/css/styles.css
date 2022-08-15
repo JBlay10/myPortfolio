@@ -4,6 +4,10 @@
     --green: #CCF381;
     --font: 'OCR A Std', monospace;
     --purple: #cf00ff;
+    --darkSmoke: #262626;
+    --sun: #FFCC33;
+    --red: #D0263D;
+    --Darkblue: #000080;
 }
 
 *{
@@ -248,7 +252,6 @@ footer h2 {
     p{
         font-size: 13px;
     }
-/*-------------- Buttons ------------*/
 
 /*--------- Floats ------------------*/
     .float-left {
@@ -288,7 +291,7 @@ footer h2 {
     }
 
     .top h1 {
-        font-size: 25px;
+        font-size: 28px;
     }
 
     .top div {
@@ -297,7 +300,7 @@ footer h2 {
         margin-top: 10px;
         float: right;
         font-family: var(--font);
-        font-size: 10px;
+        font-size: 15px;
     }
 
     .top div nav ul {
@@ -316,11 +319,12 @@ footer h2 {
         border-left: 4px double var(--blue);
     }
 
-
+/*----------- Main content ----------- */
     .content {
-        min-width: 25%; /* add 25% more if needed */
+        min-width: 30%; /* add 25% more if needed */
         display: inline-flexbox;
         margin-left: 20px;
+        margin-right: 20px;
     }
 
     /*-------- About me ------------*/
@@ -343,7 +347,7 @@ footer h2 {
     }
 
     .aboutMe img {
-        max-height: 130px;
+        max-height: 125px;
     }
 
     /*-------------- My Work -----------------*/
@@ -419,3 +423,244 @@ footer h2 {
 
 }
 
+@media screen and (min-width: 782px) and (max-width: 1339px) {
+    body {
+        background-color: #000080;
+    }
+    
+    p{
+        font-size: 14.5px;
+        color: var(--sun);
+    }
+
+    a {
+        color: var(--red);
+        font-weight: bold;
+    }
+    img {
+        border: 4px double var(--sun);
+        padding: 2px;
+    }
+
+    u {
+        color: var(--red);
+    }
+
+    h2 {
+        color: var(--red);
+    }
+
+/*-------------- Buttons ------------*/
+    input {
+        max-width: 150px;
+        max-height: 50px;
+        border: 2px solid transparent;
+        background-color: transparent;
+        border-radius: 4px;
+        box-shadow: inset 0 0 0 0 transparent;
+        transition: ease-out .4s;
+        color: var(--red);
+        font-weight: bolder;
+        margin-top: 17px;
+        padding: 13px 30px;
+    }
+    
+    input:hover {
+        box-shadow: inset 150px 0 0 0 var(--red);
+        border: 2px solid var(--red);
+        color: var(--sun);
+        cursor: pointer;
+    }
+
+/*--------- Floats ------------------*/
+    .float-left {
+        float: left;
+        margin-right: 25px;
+    }
+
+    .float-right {
+        float: right;
+        margin-left: 25px;
+    }
+
+/*----------- Home Display IMGs --------------*/
+    .responsive {
+        padding: 0px 20px;
+        display: inline-table;
+        margin-top: 20px;
+    }
+
+    .responsive img {
+        max-width: 33.33%;
+        max-height: auto;
+    }
+
+/*----------- Header --------------*/
+    .top {
+    padding: 20px;
+    font-family: var(--font);
+    background-color: var(--darkSmoke);
+    color:  var(--red);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .top h1 {
+        font-size: 45px;
+    }
+
+    .top div {
+        padding-top: 15px;
+        margin-right: 20px;
+        margin-top: 10px;
+        float: right;
+        font-family: var(--font);
+        font-size: 20px;
+    }
+
+    .top div nav ul {
+        list-style-type: none;
+    }
+
+    .top div nav ul li {
+        margin-left: 25px;
+        cursor: pointer;
+        border-bottom: 4px solid var(--red);
+    }
+
+    .top div nav ul li:hover {
+        border-bottom: 4px double var(--sun);
+        cursor: pointer;
+        border-left: 4px double var(--sun);
+    }
+
+/*----------- Main content ----------- */
+    .content {
+        min-width: 30%; /* add 25% more if needed */
+        display: inline-flexbox;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    /*-------- About me ------------*/
+    .aboutMe {
+        margin-bottom: 20px;
+        text-align: right;
+        padding: 25px;
+        min-height: 150px;
+        font-family: var(--font);
+        background-color: var(--darkSmoke);
+        color: var(--sun);
+        border-style: dotted;
+        border-width: 4px;
+        border-color: var(--sun);
+    }
+
+    .aboutMe h2 {
+        margin-bottom: 20px;
+        font-size: 35px; 
+
+    }
+
+    .aboutMe img {
+      /*  max-height: 130px; */
+        max-width: 19%;
+        max-height: auto;
+    }
+
+    /*-------------- My Work -----------------*/
+    .myWork {
+        margin-bottom: 20px;
+        text-align: justify;
+        padding: 25px;
+        min-height: 150px;
+        font-family: var(--font);
+        background-color: var(--darkSmoke);
+        color: var(--red);
+        border-style: dotted;
+        border-width: 4px;
+        border-color: var(--sun);
+    }
+    
+    .myWork h2 {
+        margin-bottom: 20px;
+        font-size: 35px;
+    }
+    
+
+    .myWork img {
+        /* max-height: 100px; */
+        max-width: 19%;
+        max-height: auto;
+
+    }
+
+    /*------------ Github ------------------*/
+    .gitHub {
+        margin-bottom: 20px;
+        text-align: right;
+        padding: 25px;
+        min-height: 150px;
+        font-family: var(--font);
+        background-color: var(--darkSmoke);
+        color: var(--green);
+        border-style: dotted;
+        border-width: 4px;
+        border-color: var(--sun);
+    }
+
+    .gitHub h2 {
+        margin-bottom: 20px;
+        font-size: 35px;
+    }
+
+    .gitHub img {
+        max-width: 23%;
+        max-height: auto;
+    }
+
+    /*------------- Ways to Contact me --------*/
+    .contact {
+        margin-bottom: 20px;
+        padding: 25px;
+        min-height: 150px;
+        font-family: var(--font);
+        background-color: var(--darkSmoke);
+        color: var(--red);
+        border-style: dotted;
+        border-width: 4px;
+        border-color: var(--sun);
+    }
+    
+    .contact h2 {
+        margin-bottom: 20px;
+        font-size: 35px;
+    }
+    
+
+    .contact img {
+        max-height: 100px;
+    }
+    
+    /* Footer */
+    .footer {
+        padding: 30px;
+        clear: both;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-align: center;
+        background-color: var(--darkSmoke);
+        color: var(--red);
+    }
+
+    footer h2 {
+        font-size: 20px;
+    }
+
+    .underLine {
+        text-decoration-line: underline;
+        text-decoration-style: double;
+        text-decoration-color: var(--green);
+    }
+
+}
